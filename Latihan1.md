@@ -8,21 +8,31 @@ MATKUL : SISTEM OPERASI
 DOSEN : Zulhair Zidan Dj. Tamu
 
 
-1. Buat Struktur Direktori
+# 1. Buat Struktur Direktori
 Gunakan mkdir dan touch untuk membuat folder serta file sample.
 
 #Buat direktori utama proyek
 ```
-mkdir proyek_sistem_operasi
+mkdir latihan1_SistemOperasi
 ```
+Penjelasan: Perintah mkdir (make directory) digunakan untuk membuat folder baru bernama latihan1_SistemOperasi. Folder ini akan menjadi wadah utama seluruh file proyek.
+
 #Masuk ke direktori tersebut
 ```
 cd proyek_sistem_operasi
 ```
+Penjelasan: Perintah cd (change directory) digunakan untuk berpindah ke direktori proyek_sistem_operasi yang baru saja dibuat.
+
 #Buat subfolder
 ```
 mkdir documents images archives logs
 ```
+Penjelasan: Perintah ini membuat empat folder sekaligus:
+documents → tempat file teks atau laporan
+images → tempat menyimpan gambar
+archives → tempat menyimpan file arsip (.zip, .tar, dll)
+logs → tempat menyimpan file log atau catatan aktivitas
+
 #Buat 20 file sample di folder-folder itu
 ```
 cd documents
@@ -52,7 +62,10 @@ touch log1.txt log2.txt log3.txt log4.txt log5.txt
 cd ..
 ```
 
-2. Script Organisasi File
+BERIKUT LINK DESKRIPSI HASIL DOKUMENTASI GAMBAR LANGKAH 1 :
+(https://drive.google.com/file/d/1j59SnllwcJMbazUP133wuTZYkgfe9kJT/view?usp=drivesdk)
+
+# 2. Script Organisasi File
 Gunakan find, mv, dan cp untuk memindahkan file sesuai ekstensi.
 
 #Buat folder baru untuk hasil pengelompokan
@@ -68,7 +81,10 @@ find . -type f -name "*.txt" -exec mv {} sorted_files/ \;
 find . -type f \( -name "*.jpg" -o -name "*.png" \) -exec cp {} sorted_files/ \;
 ```
 
-3. Fungsi Pencarian
+BERIKUT LINK DESKRIPSI HASIL DOKUMENTASI GAMBAR LANGKAH 2 :
+(https://drive.google.com/file/d/1iGUKjFQMykxwGci9rcaUNMWQiR0zJ2Rc/view?usp=drivesdk)
+
+# 3. Fungsi Pencarian
 Gunakan find dan grep untuk mencari file berdasarkan nama, ukuran, dan isi.
 
 #Cari file berdasarkan nama
@@ -83,6 +99,9 @@ find . -size +1k
 ```
 grep "log" -r documents/
 ```
+
+BERIKUT LINK DESKRIPSI HASIL DOKUMENTASI GAMBAR LANGKAH 3 :
+(https://drive.google.com/file/d/1hMbSNuHsDqcTepH41AJ_loryZKbOgGCv/view?usp=drivesdk)
 
 4. Generate Laporan
 Gunakan ls, wc, du, dan | (piping) untuk membuat laporan sistem file.
@@ -116,6 +135,9 @@ echo "Daftar file:" >> report.txt
 ls -lhR >> report.txt
 ```
 
+BERIKUT LINK DESKRIPSI HASIL DOKUMENTASI GAMBAR LANGKAH 4 :
+(https://drive.google.com/file/d/1JI-pq6LhxeLXX_ePAG7vVEWk5OQHyC8L/view?usp=drivesdk)
+
 ● Hasil Akhir
 Setelah semua langkah dijalankan, kamu akan punya struktur seperti ini:
 ```
@@ -127,6 +149,8 @@ proyek_sistem_operasi/
 ├── sorted_files/
 └── report.txt
 ```
+BERIKUT LINK DESKRIPSI HASIL DOKUMENTASI GAMBAR HASIL AKHIR :
+(https://drive.google.com/file/d/1Epvu0mTfhF24x3TSJ7Ghzww_fBTaj56P/view?usp=drivesdk)
 
 Kesimpulan
 
