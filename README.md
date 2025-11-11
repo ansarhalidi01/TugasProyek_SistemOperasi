@@ -1,4 +1,12 @@
 # TugasProyekSistemOperasi
+NAMA : ANSAR HALIDI
+
+KELAS : A SI
+
+MATKUL : SISTEM OPERASI
+
+DOSEN : Zulhair Zidan Dj. Tamu
+
 
 1. Buat Struktur Direktori
 Gunakan mkdir dan touch untuk membuat folder serta file sample.
